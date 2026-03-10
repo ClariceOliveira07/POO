@@ -44,9 +44,8 @@
             echo "resultado" . $calcu2;
         }elseif ($op = "x"){
             echo "resultado" . $calcu3;
-        }else ($op = "/"){
+        }else ($op = "/");
             echo "resultado" . $calcu4;
-        }
     }
     
     ?>
