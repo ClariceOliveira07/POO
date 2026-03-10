@@ -39,13 +39,13 @@
         $calcu4 = new Divisão($valor1, $valor2);
 
         if ($op = "+"){
-            echo "resultado" . $calcu1
+            echo "resultado" . $calcu1;
         }elseif ($op = "-"){
-            echo "resultado" . $calcu2
+            echo "resultado" . $calcu2;
         }elseif ($op = "x"){
-            echo "resultado" . $calcu3
+            echo "resultado" . $calcu3;
         }else ($op = "/"){
-            echo "resultado" . $calcu4
+            echo "resultado" . $calcu4;
         }
     }
     
