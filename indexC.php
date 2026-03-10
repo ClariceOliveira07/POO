@@ -14,10 +14,11 @@
         <label>Digite outro valor:</label>
         <input type="number" name="valor2">
         <br>
-        <button type="submit">Somar</button>
-        <button type="submit">Subtrair</button>
-        <button type="submit">Multiplicar</button>
-        <button type="submit">Dividir</button>
+        <label>Digite a operação:</label>
+        <input type="submit" name="op" value="+">
+        <input type="submit" name="op" value="-">
+        <input type="submit" name="op" value="x">
+        <input type="submit" name="op" value="/">
     </form>
     <br>
 
@@ -28,7 +29,24 @@
     require 'Divisão'; 
 
     if($_POST){
-        $soma = $_POST[''];
+        $n1 = $_POST['valor1'];
+        $n2 = $_POST['valor2'];
+        $op = $_POST['op'];
+
+        $calcu1 = new Soma($valor1, $valor2);
+        $calcu2 = new Subtração($valor1, $valor2);
+        $calcu3 = new Multiplicação($valor1, $valor2);
+        $calcu4 = new Divisão($valor1, $valor2);
+
+        if ($op = "+"){
+            echo "resultado" . $calcu1
+        }elseif ($op = "-"){
+            echo "resultado" . $calcu2
+        }elseif ($op = "x"){
+            echo "resultado" . $calcu3
+        }else ($op = "/"){
+            echo "resultado" . $calcu4
+        }
     }
     
     ?>
